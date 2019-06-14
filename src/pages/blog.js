@@ -4,7 +4,7 @@ const BlogPage = () => {
   return (
     <Layout>
       <div>
-        <h2>Blog</h2>
+        <h1>Blog</h1>
         <p>
           Laborum mollit dolore do sunt.Lorem nostrud sit mollit id eiusmod
           eiusmod est.

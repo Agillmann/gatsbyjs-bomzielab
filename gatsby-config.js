@@ -5,5 +5,17 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: `BomzieLab Web Site`,
+    author: `bomzieLab`
+  },
+  plugins: [
+    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
+  ],
 }

@@ -4,7 +4,7 @@ const PortfolioPage = () => {
   return (
     <Layout>
       <div>
-        <h2>Portfolio Area</h2>
+        <h1>Portfolio Area</h1>
       </div>
     </Layout>
   )
