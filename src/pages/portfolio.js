@@ -4,7 +4,7 @@ const PortfolioPage = () => {
   return (
     <Layout>
       <div>
-        <h1>Portfolio Area</h1>
+        <h1 className="animated animated.delay-1s fadeInUp">Portfolio Area</h1>
       </div>
     </Layout>
   )

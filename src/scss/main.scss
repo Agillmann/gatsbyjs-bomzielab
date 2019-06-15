@@ -1,4 +1,9 @@
-@import 'settings/colors';
+@import "settings/colors";
+@import "effects/animate";
+@import "generics/base";
+@import "generics/flexboxgrid";
 
-@import 'components/main-header';
-@import 'components/particles';
+@import "components/main-header";
+@import "components/footer";
+@import "components/main-layout";
+@import "components/particles";

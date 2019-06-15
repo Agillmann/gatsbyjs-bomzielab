@@ -1,0 +1,23 @@
+.header {
+  padding: 1rem 0 3rem;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+
+.nav-item {
+  font-family: "Exo";
+  font-size: 0.9rem;
+  margin-right: 1.3rem;
+  text-decoration: none;
+  color: $mid-gray-color;
+  &:hover {
+    color: $second-color;
+  }
+}
+.active-nav-item {
+  color: $second-color;
+}

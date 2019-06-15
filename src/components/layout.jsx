@@ -2,7 +2,9 @@ import React, { Component } from "react"
 import Header from "./header"
 import Footer from "./footer"
 import Particles from "react-particles-js"
-import '../scss/main.scss';
+import PageTransition from "gatsby-plugin-page-transitions"
+
+import "../scss/main.scss"
 
 class Layout extends Component {
   constructor(props) {
@@ -10,35 +12,41 @@ class Layout extends Component {
     this.state = {}
   }
   particlesOptions = {
-    "particles": {
-      "number": {
-          "value": 50
+    particles: {
+      number: {
+        value: 80,
       },
-      "size": {
-          "value": 3
+      size: {
+        value: 3,
       },
-      "color": {
-        "value": ["#005AFF","#ffa500"]
+      color: {
+        value: ["#005AFF", "#ffa500"],
       },
     },
-  
-    "interactivity": {
-        "events": {
-            "onhover": {
-                "enable": true,
-                "mode": "repulse"
-            }
-        }
-    }
+
+    interactivity: {
+      events: {
+        onhover: {
+          enable: true,
+          mode: "repulse",
+        },
+      },
+    },
   }
   render() {
     return (
-      <main>
-        <Particles className='particles' params={this.particlesOptions}/>
-        <Header />
-        {this.props.children}
-        <Footer />
-      </main>
+      <PageTransition>
+        <main>
+          <Particles className="particles" params={this.particlesOptions} />
+          <div className="container">
+            <div className="main-layout">
+              <Header />
+              {this.props.children}
+            </div>
+            <Footer />
+          </div>
+        </main>
+      </PageTransition>
     )
   }
 }

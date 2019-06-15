@@ -6,15 +6,29 @@ const Header = () => {
     <header>
       <h1>BomzieLab</h1>
       <nav>
-        <ul>
+        <ul className="nav-list">
           <li>
-            <Link to="/">Home</Link>
+            <Link className="nav-item" activeClassName="active-nav-item" to="/">
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/blog">Blog</Link>
+            <Link
+              className="nav-item"
+              activeClassName="active-nav-item"
+              to="/blog"
+            >
+              Blog
+            </Link>
           </li>
           <li>
-            <Link to="/portfolio">Portfolio</Link>
+            <Link
+              className="nav-item"
+              activeClassName="active-nav-item"
+              to="/portfolio"
+            >
+              Portfolio
+            </Link>
           </li>
         </ul>
       </nav>

@@ -7,15 +7,33 @@
 module.exports = {
   siteMetadata: {
     title: `BomzieLab Web Site`,
-    author: `bomzieLab`
+    author: `bomzieLab`,
   },
   plugins: [
     `gatsby-plugin-sass`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    `gatsby-plugin-page-transitions`,
+    {
+      resolve: "gatsby-plugin-page-transitions",
+      options: {
+        transitionTime: 800,
+      },
+    },
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
   ],
 }
