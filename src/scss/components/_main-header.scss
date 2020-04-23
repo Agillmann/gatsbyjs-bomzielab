@@ -4,13 +4,14 @@
 
 .nav-list {
   display: flex;
+  justify-content: start;
   list-style-type: none;
   margin: 0;
 }
 
 .nav-item {
   font-family: "Exo";
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-right: 1.3rem;
   text-decoration: none;
   color: $mid-gray-color;

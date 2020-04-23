@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import InViewMonitor from "react-inview-monitor"
+
 const BlogPage = () => {
   return (
     <Layout>

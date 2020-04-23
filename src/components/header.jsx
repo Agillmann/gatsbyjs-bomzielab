@@ -1,10 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
+import Icon from "../images/svg-icons/logo-bomzielab.svg"
 
 const Header = () => {
   return (
     <header>
-      <h1>BomzieLab</h1>
+      <Icon />
       <nav>
         <ul className="nav-list">
           <li>

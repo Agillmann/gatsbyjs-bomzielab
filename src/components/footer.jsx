@@ -3,7 +3,7 @@ import React from "react"
 const Footer = () => {
   return (
     <footer>
-      <p>Copyright © 2019 BomzieLab</p>
+      <p>Copyright © 2020 BomzieLab</p>
     </footer>
   )
 }
